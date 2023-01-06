@@ -2,34 +2,52 @@
   border-bottom: 2px solid #E7E7E7;
   padding: 10px;
   font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-right: 50%;
 }
+
 #header .links .vertical-line {
   width: 1px;
   height: 10px;
   background-color: #999999;
 }
+
 #header .links a {
   padding: 0 10px;
   text-decoration: none;
   color: #999999;
 }
+
 #header .links a:hover {
   text-decoration: underline;
 }
+
 #header .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
 }
+
 #header .header__container .header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 10px;
   margin: 0 60px;
 }
+
 #header .header__container .header__search input {
   border-radius: 50px 0 0 50px;
   border: none;
@@ -37,9 +55,11 @@
   padding: 10px 22px;
   color: #8D8D8D;
 }
+
 #header .header__container .header__search input:focus {
   outline: none;
 }
+
 #header .header__container .header__search select {
   background-color: #EEEEEE;
   border: none;
@@ -47,44 +67,64 @@
   padding: 0 15px;
   color: #8D8D8D;
 }
+
 #header .header__container .header__search button {
   border-radius: 0 50px 50px 0;
   border: none;
   padding: 0 15px;
 }
+
 #header .header__container .header__search button .search-icon {
   width: 16px;
 }
+
 #header .header__container .header__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 #header .header__container .header__contact span {
   font-size: 11px;
   color: #8D8D8D;
 }
+
 #header .header__container .header__contact strong {
   font-size: 18px;
   color: #282D2B;
 }
+
 #header .header__container .header__contact a {
   font-size: 11px;
   color: #8D8D8D;
 }
+
 #header .navbar {
   background-color: #f0861e;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 #header .navbar .nav-item {
   padding: 15px;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
   font-size: 13px;
   color: #FFF;
 }
+
 #header .navbar .nav-item:nth-child(7), #header .navbar .nav-item:nth-child(8), #header .navbar .nav-item:nth-child(9) {
   background-color: #f1a65c;
 }
+
 #header .navbar .nav-item:hover {
   background-color: #FFF;
   color: #282D2B;
@@ -93,21 +133,34 @@
 
 #footer {
   background-color: #161A21;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 50px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 #footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 160px;
   margin: 30px;
 }
+
 #footer .footer__container h4 {
   color: #FFF;
   font-size: 12px;
 }
+
 #footer .footer__container a {
   color: #A8A8A8;
   text-decoration: none;
@@ -117,4 +170,19 @@
 html, body {
   margin: 0;
   font-family: sans-serif;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.card {
+  border: 1px solid red;
+}
+
+.main {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #000;
+}
+/*# sourceMappingURL=index.css.map */

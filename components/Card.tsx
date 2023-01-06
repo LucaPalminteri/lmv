@@ -1,11 +1,7 @@
 import React from 'react'
+import { Publicacion } from '../data/types.ts'
 
-type Props = {
-    title:string;
-    price:int;
-}
-
-function Card(props:Props) {
+function Card(props:Publicacion) {
   return (
     <div className='card'>
         <h2>{props.title}</h2>
