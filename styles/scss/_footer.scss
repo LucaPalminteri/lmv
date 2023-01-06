@@ -1,0 +1,25 @@
+#footer {
+    background-color: #161A21;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    flex-wrap: wrap;
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        width: 160px;
+        margin: 30px;
+
+        h4 {
+            color: #FFF;
+            font-size: 12px;
+        }
+
+        a {
+            color: #A8A8A8;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    }
+}
