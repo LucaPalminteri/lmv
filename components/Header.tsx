@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import DropDown from './DropDown'
-import { categories,fliaTvAudioVideo,fliaInformatica } from '../data/categories'
+import { categories,fliaTvAudioVideo,fliaInformatica,fliaClimatizacion,fliaCelulares } from '../data/categories'
 
 function Header() {
   return (
@@ -50,10 +50,10 @@ function Header() {
               <DropDown title={'INFORMÁTICA'}  items={fliaInformatica}/>
             </a>
             <a href='/' >
-              <DropDown title={'CLIMATIZACIÓN'}  items={['PEQUEÑOS ELECTRODOMÉSTICOS','BAZAR','RODADOS','HOGAR','JARDÍN']}/>
+              <DropDown title={'CLIMATIZACIÓN'}  items={fliaClimatizacion}/>
             </a>
             <a href='/' >
-              <DropDown title={'CELULARES'}  items={['PEQUEÑOS ELECTRODOMÉSTICOS','BAZAR','RODADOS','HOGAR','JARDÍN']}/>
+              <DropDown title={'CELULARES'}  items={fliaCelulares}/>
             </a>
             <a href='/' className='nav-item'>OFERTAS</a>
             <a href='/' className='nav-item'>AHORA 99</a>
