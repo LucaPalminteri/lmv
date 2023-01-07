@@ -2,7 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-import { faWarning } from '@fortawesome/free-solid-svg-icons/faWarning'
+import DropDown from './DropDown'
+import { categories,fliaTvAudioVideo,fliaInformatica } from '../data/categories'
 
 function Header() {
   return (
@@ -38,15 +39,25 @@ function Header() {
             </div>
         </div>
         <div className='navbar'>
-            <div className='nav-item'>INICIO</div>
-            <div className='nav-item'>CATEGORÍAS</div>
-            <div className='nav-item'>TV, AUDIO Y VIDEO</div>
-            <div className='nav-item'>INFORMÁTICA</div>
-            <div className='nav-item'>CLIMATIZACIÓN</div>
-            <div className='nav-item'>CELULARES</div>
-            <div className='nav-item'>OFERTAS</div>
-            <div className='nav-item'>AHORA 99</div>
-            <div className='nav-item'>ULTIMAS UNIDADES</div>
+            <a href='/' className='nav-item'>INICIO</a>
+            <a href='/' >
+              <DropDown title={'CATEGORÍAS'} items={categories}/>
+            </a>
+            <a href='/'  >
+              <DropDown title={'TV, AUDIO Y VIDEO'}  items={fliaTvAudioVideo}/>
+            </a>
+            <a href='/' >
+              <DropDown title={'INFORMÁTICA'}  items={fliaInformatica}/>
+            </a>
+            <a href='/' >
+              <DropDown title={'CLIMATIZACIÓN'}  items={['PEQUEÑOS ELECTRODOMÉSTICOS','BAZAR','RODADOS','HOGAR','JARDÍN']}/>
+            </a>
+            <a href='/' >
+              <DropDown title={'CELULARES'}  items={['PEQUEÑOS ELECTRODOMÉSTICOS','BAZAR','RODADOS','HOGAR','JARDÍN']}/>
+            </a>
+            <a href='/' className='nav-item'>OFERTAS</a>
+            <a href='/' className='nav-item'>AHORA 99</a>
+            <a href='/' className='nav-item'>ULTIMAS UNIDADES</a>
         </div>
     </header>
   )
