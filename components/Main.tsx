@@ -5,10 +5,10 @@ import {Publicacion} from '../data/types.ts'
 
 function Main() {
 
-  arrPublicaciones = []
+  let arrPublicaciones:Array<ReactElement> = []
   publicaciones.map((publicacion:Publicacion,index:number) => {
     arrPublicaciones.push(
-      <Card title={publicacion.title} price={publicacion.price} />
+      <Card publicacion={publicacion} key={publicacion.id}/>
     )
   })
 

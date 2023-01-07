@@ -1,3 +1,85 @@
 .card {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+    max-width: 300px;
+    flex-grow: 1;
+    margin: 10px;
+    padding-bottom: 80px;
+    position: relative;
+    transition-duration: .3s;
+    padding-top: 10px;
+
+    .card__image {
+    }
+
+    .card__price {
+        padding-top: 20px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .card__cuotas {
+        color: #58C32E;
+        font-size: 15px;
+        font-weight: 400;
+        padding-bottom: 10px;
+        text-transform: capitalize;
+    }
+
+    .card__title {
+        font-size: 15px;
+        text-align: center;
+        width: 250px;
+        padding-bottom: 10px;
+    }
+
+    button {
+        width: 105px;
+        height: 35px;
+        border: 1px solid #D4D4D4;
+        background-color: #FFF;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 20px;
+        transition-duration: .3s;
+
+        span {
+            color: #2B2B2B;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 12px;
+            transition-duration: .3s;
+        }
+    }
+
+    &:hover {
+        background-color: #0000001A;
+        cursor: pointer;
+        transform: scale(1.05);
+
+        
+        &::after {
+            content: 'COMPRAR';
+            z-index: 100;
+            position: absolute;
+            top: 45%;
+            width: 90%;
+            text-align: center;
+            background-color: #393939CC;
+            padding: 15px;
+            color: #FFF;    
+        }
+
+        button {
+            background-color: #58C32E;
+            cursor: pointer;
+            transform: scale(1.1);
+
+            span {
+                color: #FFF;
+            }
+        }
+    }
 }

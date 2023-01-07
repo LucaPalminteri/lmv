@@ -1,4 +1,4 @@
-export type publicaciones = {
+export type publicacion = {
     id:number,
     title:string,
     price:number,
