@@ -32,6 +32,7 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
+        flex-wrap: wrap;
 
         .header__search {
             display: flex;
@@ -97,6 +98,7 @@
     .navbar {
         background-color: $orange;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         
         a {

@@ -1,23 +1,26 @@
 import React from 'react'
-import { Publicacion } from '../data/types.ts'
+import { Publicacion } from '../data/types'
 import Image from 'next/image'
+import Link from 'next/link'
+import Router from 'next/router'
 
-const myLoader = ({ src, width, quality }:{src:string,width:number,quality:number}) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
-}
-
-function Card({publicacion}:Publicacion) {
+function Card({publicacion}:{publicacion:Publicacion}) {
+ 
   return (
     <div className='card'>
-      <div className='card__image'>
-        <Image src={publicacion.image} width={250} height={250} alt={"asdf"} />
-      </div>
-      <span className='card__price'>${publicacion.price}</span>
-      <span className='card__cuotas'>18 Cuotas Fijas De 8798</span>
-      <a className='card__title'>{publicacion.title}</a>
-      <button>
-        <span>comprar</span>
-      </button>
+      {/* <Link href={`/publication/1`}> */}
+        <div className='card__image'>
+        <Link href={`/publication/${publicacion.id}`} className='card__title'>
+          <Image src={publicacion.image} width={250} height={250} alt={"asdf"} />
+        </Link>
+        </div>
+        <span className='card__price'>${publicacion.price}</span>
+        <span className='card__cuotas'>18 Cuotas Fijas De 8798</span>
+        <Link href={`/publication/${publicacion.id}`} className='card__title'>{publicacion.title}</Link>
+        <button>
+          <span>comprar</span>
+        </button>
+      {/* </Link> */}
     </div>
   )
 }

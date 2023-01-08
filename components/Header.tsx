@@ -4,18 +4,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import DropDown from './DropDown'
 import { categories,fliaTvAudioVideo,fliaInformatica,fliaClimatizacion,fliaCelulares } from '../data/categories'
+import Link from 'next/link'
 
 function Header() {
   return (
     <header id='header'>
         <div className="links">
-          <a href="#">RED LUCA</a> 
+          <Link href="#">RED LUCA</Link> 
           <div className='vertical-line'></div>
-          <a href="#">QUIÉNES SOMOS</a>
+          <Link href="#">QUIÉNES SOMOS</Link>
           <div className='vertical-line'></div>
-          <a href="#">CENTRO DE AYUDA</a>
+          <Link href="#">CENTRO DE AYUDA</Link>
         </div>
         <div className='header__container'>
+          <Link href={'/'}>
             <Image
               className='header__logo'
               src={"/LMV.jpg"}
@@ -23,6 +25,7 @@ function Header() {
               height={74}
               alt="Logo LMV"
             />
+          </Link>
             <div className='header__search'>
               <input type="text" placeholder='Buscar...'/>
               <select name="select" id="">
@@ -39,25 +42,25 @@ function Header() {
             </div>
         </div>
         <div className='navbar'>
-            <a href='/' className='nav-item'>INICIO</a>
-            <a href='/' >
+            <Link href='/' className='nav-item'>INICIO</Link>
+            <Link href='/market/categories' >
               <DropDown title={'CATEGORÍAS'} items={categories}/>
-            </a>
-            <a href='/'  >
+            </Link>
+            <Link href='/market/tv-audio-video'  >
               <DropDown title={'TV, AUDIO Y VIDEO'}  items={fliaTvAudioVideo}/>
-            </a>
-            <a href='/' >
+            </Link>
+            <Link href='/market/informatics' >
               <DropDown title={'INFORMÁTICA'}  items={fliaInformatica}/>
-            </a>
-            <a href='/' >
+            </Link>
+            <Link href='/market/climatization' >
               <DropDown title={'CLIMATIZACIÓN'}  items={fliaClimatizacion}/>
-            </a>
-            <a href='/' >
+            </Link>
+            <Link href='/market/smartphones' >
               <DropDown title={'CELULARES'}  items={fliaCelulares}/>
-            </a>
-            <a href='/' className='nav-item'>OFERTAS</a>
-            <a href='/' className='nav-item'>AHORA 99</a>
-            <a href='/' className='nav-item'>ULTIMAS UNIDADES</a>
+            </Link>
+            <Link href='/market/offers' className='nav-item'>OFERTAS</Link>
+            <Link href='/market/ahora-99' className='nav-item'>AHORA 99</Link>
+            <Link href='/market/last-units' className='nav-item'>ULTIMAS UNIDADES</Link>
         </div>
     </header>
   )
