@@ -22,9 +22,7 @@ function page({
 }: {
   params: { id: string };
 }) {
-  let publication: Publicacion | null = binarySearch(publicactions,2)
-
-  console.log(publication)
+  let publication: Publicacion | null = publicactions[parseInt(params.id)-1]
 
   return (
     <div>
