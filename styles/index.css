@@ -252,4 +252,14 @@ html, body {
 .publication .main-container .right .product-title {
   font-size: 25px;
   font-weight: 600;
+}
+.publication .main-container .right label {
+  font-size: 14px;
+}
+.publication .main-container .right .product-price {
+  font-size: 40px;
+}
+.publication .main-container .right span {
+  font-size: 16px;
+  color: #58C32E;
 }/*# sourceMappingURL=index.css.map */
