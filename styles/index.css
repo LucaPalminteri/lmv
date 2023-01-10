@@ -228,4 +228,28 @@ html, body {
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.publication {
+  max-width: 1000px;
+  margin: auto;
+}
+.publication .main-container {
+  display: flex;
+}
+.publication .main-container .left, .publication .main-container .right {
+  flex: 1;
+}
+.publication .main-container .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.publication .main-container .right {
+  display: flex;
+  flex-direction: column;
+}
+.publication .main-container .right .product-title {
+  font-size: 25px;
+  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */

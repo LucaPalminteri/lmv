@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import Card from './Card'
 import publicaciones from '../data/publicaciones.json'
-import {Publicacion} from '../data/types.ts'
+import {Publicacion} from '../data/types'
 
 function Main() {
 
